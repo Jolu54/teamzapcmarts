@@ -43,21 +43,21 @@ const eventTitleStyle = {
 
 const localizer = momentLocalizer(moment);
 var defaultMessages = {
-  date: "Data",
+  date: "Fecha",
   time: "Hora",
   event: "Evento",
   allDay: "Dia Todo",
   week: "Semana",
-  work_week: "Agendamentos",
+  work_week: "Agendamientos",
   day: "Dia",
-  month: "Mês",
+  month: "Mes",
   previous: "Anterior",
   next: "Próximo",
-  yesterday: "Ontem",
-  tomorrow: "Amanhã",
-  today: "Hoje",
+  yesterday: "ayer",
+  tomorrow: "Mañana",
+  today: "Hoy",
   agenda: "Agenda",
-  noEventsInRange: "Não há agendamentos no período.",
+  noEventsInRange: "No existen agendamientos en estos periodos.",
   showMore: function showMore(total) {
     return "+" + total + " mais";
   }

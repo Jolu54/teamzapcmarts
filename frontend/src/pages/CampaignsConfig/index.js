@@ -142,7 +142,7 @@ const CampaignsConfig = () => {
                 fullWidth
               >
                 <InputLabel id="messageInterval-label">
-                  Intervalo Randômico de Disparo
+                  Intervalo aleatorio de accion
                 </InputLabel>
                 <Select
                   name="messageInterval"
@@ -167,13 +167,13 @@ const CampaignsConfig = () => {
                 fullWidth
               >
                 <InputLabel id="longerIntervalAfter-label">
-                  Intervalo Maior Após
+                  Intervalo más largo después
                 </InputLabel>
                 <Select
                   name="longerIntervalAfter"
                   id="longerIntervalAfter"
                   labelId="longerIntervalAfter-label"
-                  label="Intervalo Maior Após"
+                  label="Intervalo más largo después"
                   value={settings.longerIntervalAfter}
                   onChange={(e) => handleOnChangeSettings(e)}
                 >
@@ -199,13 +199,13 @@ const CampaignsConfig = () => {
                 fullWidth
               >
                 <InputLabel id="greaterInterval-label">
-                  Intervalo de Disparo Maior
+                  Intervalo de de activación mayor
                 </InputLabel>
                 <Select
                   name="greaterInterval"
                   id="greaterInterval"
                   labelId="greaterInterval-label"
-                  label="Intervalo de Disparo Maior"
+                  label="Intervalo de activación mayor"
                   value={settings.greaterInterval}
                   onChange={(e) => handleOnChangeSettings(e)}
                 >
@@ -230,14 +230,14 @@ const CampaignsConfig = () => {
                 color="primary"
                 style={{ marginRight: 10 }}
               >
-                Adicionar Variável
+                Agregar variable
               </Button>
               <Button
                 onClick={saveSettings}
                 color="primary"
                 variant="contained"
               >
-                Salvar Configurações
+                Guardar configuraciones
               </Button>
             </Grid>
             {showVariablesForm && (

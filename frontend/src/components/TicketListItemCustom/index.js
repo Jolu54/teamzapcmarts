@@ -376,7 +376,7 @@ const useStyles = makeStyles((theme) => ({
           [classes.pendingTicket]: ticket.status === "pending",
         })}
       >
-        <Tooltip arrow placement="right" title={ticket.queue?.name?.toUpperCase() || "SEM FILA"} >
+        <Tooltip arrow placement="right" title={ticket.queue?.name?.toUpperCase() || "SIN FILA"} >
           <span style={{ backgroundColor: ticket.queue?.color || "#7C7C7C" }} className={classes.ticketQueueColor}></span>
         </Tooltip>
         <ListItemAvatar>

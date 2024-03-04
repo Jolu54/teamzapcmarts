@@ -138,7 +138,7 @@ const SettingsCustom = () => {
     try {
       setSchedules(data);
       await updateSchedules({ id: company.id, schedules: data });
-      toast.success("Horários atualizados com sucesso.");
+      toast.success("Horarios actualizados con éxito.");
     } catch (e) {
       toast.error(e);
     }
@@ -164,11 +164,11 @@ const SettingsCustom = () => {
           onChange={handleTabChange}
           className={classes.tab}
         >
-          <Tab label="Opções" value={"options"} />
+          <Tab label="Opçiones" value={"options"} />
           {schedulesEnabled && <Tab label="Horários" value={"schedules"} />}
           {isSuper() ? <Tab label="Empresas" value={"companies"} /> : null}
           {isSuper() ? <Tab label="Planos" value={"plans"} /> : null}
-          {isSuper() ? <Tab label="Ajuda" value={"helps"} /> : null}
+          {isSuper() ? <Tab label="Ayuda" value={"helps"} /> : null}
         </Tabs>
         <Paper className={classes.paper} elevation={0}>
           <TabPanel
